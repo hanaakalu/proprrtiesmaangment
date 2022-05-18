@@ -6,33 +6,32 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateStorekeepersTable extends Migration
 {
-    /**
-     * Run the migrations.
+    /* Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('storekeepers', function (Blueprint $table) {
+        Schema::create('storekeeper', function (Blueprint $table) {
             $table->id();
-            $table->string(Fname);
             
+            $table->string('c_lname');
+            $table->string('c_fname');
+            $table->string('c_sex');
+            $table->string('c_brithdate');
+            $table->string('c_email');
+            $table->integer('c_phone');
             $table->timestamps();
-            $table->unsignedBigInteger('maneger_id');
-            $table->foreign('maneger_id')
-            ->reference('id')
-            ->on('maneger')
-            ->onDelete('cascade');
         });
     }
 
-    /**
-     * Reverse the migrations.
+    
+     /* Reverse the migrations.
      *
      * @return void
      */
     public function down()
     {
-        Schema::dropIfExists('storekeepers');
+        Schema::dropIfExists('storekeeper');
     }
-}
+};

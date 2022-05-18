@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Storekeeper extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        
+        'c_lname',
+        'c_fname',
+        'c_sxe',
+        'c_brithdate',
+        'c_email',
+        'c_phone'
+        ];
 }
