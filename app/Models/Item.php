@@ -18,4 +18,8 @@ class Item extends Model
         
        
         ];
+        public function storekeepers()
+        {
+            return $this->belongsTo(Storekeeper::class);
+        }
 }

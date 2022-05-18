@@ -17,4 +17,8 @@ class Storekeeper extends Model
         'c_email',
         'c_phone'
         ];
+        public function items()
+        {
+            return $this->hasMany(Item::class);
+        }
 }

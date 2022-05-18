@@ -21,6 +21,11 @@ class CreateItemsTable extends Migration
             $table->double('price');
             $table->integer('quantity');
            $table->timestamps();
+           $table->unsignedBigInteger('Storekeeper_id');
+           $table->foreign('Storekeeper_id')
+           ->references('id')
+           ->on('Storekeeper')
+           ->onDelete('cascade');
         });
     }
 
