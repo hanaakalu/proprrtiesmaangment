@@ -15,12 +15,12 @@ class CreateStorekeepersTable extends Migration
         Schema::create('storekeeper', function (Blueprint $table) {
             $table->id();
             
-            $table->string('c_lname');
-            $table->string('c_fname');
-            $table->string('c_sex');
-            $table->string('c_brithdate');
-            $table->string('c_email');
-            $table->integer('c_phone');
+            $table->string('fname');
+            $table->string('lname');
+            $table->string('sex');
+            $table->string('brithdate');
+            $table->string('email');
+            $table->integer('phone');
             $table->timestamps();
         });
     }

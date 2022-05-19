@@ -15,12 +15,12 @@ class StorekeeperController extends Controller
     
     {
       $Storekeeper =new Storekeeper();
-      $Storekeeper->c_lname = $request->name;
-      $Storekeeper->c_fname = $request->l_name;
-      $Storekeeper->c_sex = $request->s_sex;
-      $Storekeeper->c_birthdate = $request->s_birthdate;
-      $Storekeeper->c_email = $request->s_email;
-      $Storekeeper->c_phone = $request->s_phone;
+      $Storekeeper->lname = $request->name;
+      $Storekeeper->fname = $request->l_name;
+      $Storekeeper->sex = $request->sex;
+      $Storekeeper->birthdate = $request->birthdate;
+      $Storekeeper->email = $request->email;
+      $Storekeeper->phone = $request->phone;
      $is_saved = $Storekeeper->save();
     if($is_saved){
     echo "SAVED SUCCESSFULLY.";

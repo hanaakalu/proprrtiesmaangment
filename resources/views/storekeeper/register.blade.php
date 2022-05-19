@@ -35,11 +35,11 @@ name" autofocus>
  </div
  @csrf
  <div class="form-group row">
- <label for="s_sex" class="col-md-4 col-formlabel text-md-right">{{ __('s_sex') }}</label>
+ <label for="sex" class="col-md-4 col-formlabel text-md-right">{{ __('sex') }}</label>
  <div class="col-md-6">
- <input id="s_sex" type="text" class="formcontrol @error('s_sex') isinvalid @enderror" name="s_sex" value="{{ old('s_sex') }}" required autocomplete
-="s_sex">
- @error('s_sex')
+ <input id="sex" type="text" class="formcontrol @error('sex') isinvalid @enderror" name="sex" value="{{ old('sex') }}" required autocomplete
+="sex">
+ @error('sex')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>
@@ -47,11 +47,11 @@ name" autofocus>
  </div>
  </div>
  <div class="form-group row">
- <label for="s_birthdate" class="col-md-4 col-formlabel text-md-right">{{ __('s_birthdate') }}</label>
+ <label for="birthdate" class="col-md-4 col-formlabel text-md-right">{{ __('birthdate') }}</label>
  <div class="col-md-6">
- <input id="s_birthdate" type="text" class="formcontrol @error('s_birthdate') isinvalid @enderror" name="s_birthdate" value="{{ old('s_birthdate') }}" required autocomplete
-="s_birthdate">
- @error('s_birthdate')
+ <input id="birthdate" type="text" class="formcontrol @error('birthdate') isinvalid @enderror" name="birthdate" value="{{ old('birthdate') }}" required autocomplete
+="birthdate">
+ @error('birthdate')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>
@@ -59,11 +59,11 @@ name" autofocus>
  </div>
  </div>
  <div class="form-group row">
- <label for="s_email" class="col-md-4 col-formlabel text-md-right">{{ __('s_email') }}</label>
+ <label for="email" class="col-md-4 col-formlabel text-md-right">{{ __('email') }}</label>
  <div class="col-md-6">
- <input id="s_email" type="text" class="formcontrol @error('s_email') isinvalid @enderror" name="s_email" value="{{ old('s_email') }}" required autocomplete
-="s_email">
- @error('s_email')
+ <input id="email" type="text" class="formcontrol @error('email') isinvalid @enderror" name="email" value="{{ old('email') }}" required autocomplete
+="email">
+ @error('email')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>
@@ -72,11 +72,11 @@ name" autofocus>
  </div>
  @csrf
  <div class="form-group row">
- <label for="s_phone" class="col-md-4 col-formlabel text-md-right">{{ __('s_phone') }}</label>
+ <label for="phone" class="col-md-4 col-formlabel text-md-right">{{ __('phone') }}</label>
  <div class="col-md-6">
- <input id="s_phone" type="text" class="formcontrol @error('s_phone') isinvalid @enderror" name="s_phone" value="{{ old('s_phone') }}" required autocomplete
-="s_phone">
- @error('s_phone')
+ <input id="phone" type="text" class="formcontrol @error('phone') isinvalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete
+="phone">
+ @error('phone')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>
