@@ -13,7 +13,20 @@ class CreateItemsTable extends Migration
      */
     public function up()
     {
-      
+        Schema::create('items', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('model');
+            $table->string('unit');
+            $table->double('price');
+            $table->integer('quantity');
+           $table->timestamps();
+           $table->unsignedBigInteger('Storekeeper_id');
+           $table->foreign('Storekeeper_id')
+           ->references('id')
+           ->on('Storekeeper')
+           ->onDelete('cascade');
+        });
     }
 
     /**
